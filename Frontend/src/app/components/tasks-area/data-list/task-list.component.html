@@ -1,0 +1,9 @@
+<div >
+    <p></p>
+      <p >Total Market Value: {{ totalPrice }}M</p>
+    <p>Average Age : {{ averageAge }}</p>
+    <p>Table Position : {{ tablePosition }}</p> 
+ 
+    <app-task-card  *ngFor="let t of players" [player]="t">
+    </app-task-card>
+</div>

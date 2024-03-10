@@ -1,0 +1,32 @@
+<div class="tables-container">
+<table >   
+    <thead>
+        <tr>
+            <th>קבוצת בית</th>
+            <th>תוצאה</th>
+        </tr>
+    </thead>
+      <tbody>
+            <tr *ngFor="let table of awayTeam; let i = index">
+                <td><img src="{{imageSource + table.imageName }}" style="width: 15px"> {{ table.name }} </td>
+            <td>{{ table.goals }}</td>
+        </tr>
+      </tbody>
+      
+    </table>
+    <table >   
+        <thead>
+            <tr>
+                <th>תוצאה</th>
+                <th>קבוצת חוץ</th>
+            </tr>
+        </thead>
+          <tbody>
+                <tr *ngFor="let table of homeTeam; let i = index">
+                    <td>{{ table.goals }}</td>
+                    <td> {{ table.name }} <img src="{{imageSource + table.imageName }}" style="width: 15px"></td>
+            </tr>
+          </tbody>
+          
+        </table>
+    </div> 
